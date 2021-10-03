@@ -4,9 +4,9 @@ import SearchForm from '../components/SearchForm'
 
 export default function Home() {
   return (
-    <div className="h-screen bg-1 p-8">
+    <div className="bg-1 mx-auto p-8">
       <Head>
-        <title>Zuno</title>
+        <title>Zuno - GitHub Profile Viewer</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

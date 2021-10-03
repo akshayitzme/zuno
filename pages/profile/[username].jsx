@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Head from 'next/head';
 import { useRouter } from 'next/router'
 import getUserData from '../../functions/getUserData';
 import formatDate from '../../functions/formatDate';
@@ -34,13 +35,19 @@ function ProfilePage() {
             setFollowingCount(data.following)
             setJoined(date)
             setLoaded(1)
+        }else{
+            router.push('/')
         }
     }, [username])
 
     return (
         <div>
             {isLoaded ? (
-                <div className="bg-1 min-h-100 h-screen p-8">
+                <div className="bg-1 mx-auto h-screen w-screen p-8">
+                    <Head>
+                        <title>Zuno - {username}</title>
+                        <link rel="icon" href="/favicon.ico" />
+                    </Head>
                     <div className="flex flex-col md:flex-row justify-between">
                         <h1 className="place-self-start text-6xl text-white font-bold clr-1">Zuno.</h1>
                         <SearchForm />
@@ -60,7 +67,7 @@ function ProfilePage() {
 
                             </div>
 
-                            <div className="mt-10">
+                            <div className="mx-auto mt-10">
                                 <div className="grid grid-cols-2 gap-3">
                                     <div className="hover:bg-gray-700 mx-auto text-center border-4 rounded-full flex p-3 items-center brc-1">
                                         <h3 className="clr-1 font-medium text-2xl">{followersCount}</h3>
@@ -98,9 +105,7 @@ function ProfilePage() {
                     </div>
                     <Footer />
                 </div>
-            ) : (
-                <div>Not Loaded</div>
-            )}
+            ) : ''}
         </div>
     )
 
