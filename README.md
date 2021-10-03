@@ -10,6 +10,14 @@ GitHub Profile Viewer created in Next.js and Tailwindcss
 	- Stars 	
 	- Public Repo Count
 	- ..etc
+    
+## Set Up
+- clone this repo  ```git clone https://github.com/akshayitzme/zuno``` 
+- enter repo directory and install node modules ```yarn install``` 
+or 
+```npm install```
+- running dev server ```yarn dev``` or ```npm dev```
+
 
 ## Contributing
 - feel free to contribute on everything.
