@@ -1,4 +1,5 @@
 # 🔍 Zuno  
+![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=for-the-badge) 
 ![GitHub Hacktoberfest combined status](https://img.shields.io/github/hacktoberfest/2021/akshayitzme/zuno?style=for-the-badge)
 
 GitHub Profile Viewer created in Next.js and Tailwindcss
