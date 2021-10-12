@@ -21,7 +21,7 @@ GitHub Profile Viewer created in Next.js and Tailwindcss
 - enter repo directory and install node modules ```yarn install``` 
 or 
 ```npm install```
-- running dev server ```yarn dev``` or ```npm dev```
+- running dev server ```yarn dev``` or ```npm run dev```
 
 
 ## Contributing
