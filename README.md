@@ -13,6 +13,10 @@ GitHub Profile Viewer created in Next.js and Tailwindcss
     
 ## Set Up
 - clone this repo  ```git clone https://github.com/akshayitzme/zuno``` 
+- check if nodejs is installed by running
+	`node -v`
+	- if previous command returned a version number.. you're good to go. 
+	- if that command returned an error install nodejs from [nodejs.org](https://nodejs.org)
 - enter repo directory and install node modules ```yarn install``` 
 or 
 ```npm install```
