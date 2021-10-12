@@ -18,7 +18,7 @@ function SearchForm() {
 
     return (
         <form onSubmit={formik.handleSubmit}>
-            <input name="username" onChange={formik.handleChange} value={formik.values.username} className="h-12 p-2 text-black" type="search" placehoder="github username" />
+            <input name="username" onChange={formik.handleChange} value={formik.values.username} className="h-12 p-2 text-black rounded" type="search" placehoder="github username" />
             <button className="bg-white" type="submit">Submit</button>
         </form>
     )
