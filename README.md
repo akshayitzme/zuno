@@ -12,7 +12,8 @@ GitHub Profile Viewer created in Next.js and Tailwindcss
 	- ..etc
     
 ## Set Up
-- clone this repo  ```git clone https://github.com/akshayitzme/zuno``` 
+- fork this repo 
+- clone your fork 
 - check if nodejs is installed by running
 	`node -v`
 	- if previous command returned a version number.. you're good to go. 
