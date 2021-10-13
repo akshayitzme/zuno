@@ -2,6 +2,8 @@
 ![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=for-the-badge) 
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/akshayitzme/zuno/CodeQL?style=for-the-badge)
 ![GitHub Hacktoberfest combined status](https://img.shields.io/github/hacktoberfest/2021/akshayitzme/zuno?style=for-the-badge)
+![GitHub contributors](https://img.shields.io/github/contributors/akshayitzme/zuno?style=for-the-badge)
+
 
 GitHub Profile Viewer created in Next.js and Tailwindcss
 
