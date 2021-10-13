@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
+import 'remixicon/fonts/remixicon.css'
 import { useRouter } from 'next/router'
 import getUserData from '../../functions/getUserData';
 import formatDate from '../../functions/formatDate';
@@ -60,8 +61,9 @@ function ProfilePage() {
                                 <h3 className="text-gray-300 text-base">{bio}</h3>
                                 <h3 className="text-gray-300 text-base">{loc}</h3>
                                 <h3 className="text-gray-300 text-base">
+                                <i class="ri-links-line"></i>
                                     <a href={link}>
-                                        blog_link
+                                        <span className="font-medium">&nbsp;Website</span>
                                     </a>
                                 </h3>
 
