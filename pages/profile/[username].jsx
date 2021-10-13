@@ -35,6 +35,7 @@ function ProfilePage() {
             setFollowersCount(data.followers)
             setFollowingCount(data.following)
             setJoined(date)
+            setLink(data.blog)
             setLoaded(1)
         }else{
             router.push('/')
@@ -62,7 +63,7 @@ function ProfilePage() {
                                 <h3 className="text-gray-300 text-base">{loc}</h3>
                                 <h3 className="text-gray-300 text-base">
                                 <i class="ri-links-line"></i>
-                                    <a href={link}>
+                                    <a href={link} target="_blank">
                                         <span className="font-medium">&nbsp;Website</span>
                                     </a>
                                 </h3>
