@@ -9,7 +9,7 @@ function SearchForm() {
         },
         onSubmit: ({username}) => {
             try {
-                router.push(`/profile/${username}`)
+                router.push(`/${username}/`)
             } catch (error) {
                 console.log(error);
             }
