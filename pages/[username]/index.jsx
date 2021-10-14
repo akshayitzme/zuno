@@ -37,7 +37,7 @@ function ProfilePage() {
             setJoined(date)
             setLink(data.blog)
             setLoaded(1)
-        }else{
+        } else {
             router.push('/')
         }
     }, [username])
@@ -62,7 +62,7 @@ function ProfilePage() {
                                 <h3 className="text-gray-300 text-base">{bio}</h3>
                                 <h3 className="text-gray-300 text-base">{loc}</h3>
                                 <h3 className="text-gray-300 text-base">
-                                <i class="ri-links-line"></i>
+                                    <i class="ri-links-line"></i>
                                     <a href={link} target="_blank">
                                         <span className="font-medium">&nbsp;Website</span>
                                     </a>
@@ -73,8 +73,10 @@ function ProfilePage() {
                             <div className="mx-auto mt-10">
                                 <div className="grid grid-cols-2 gap-3">
                                     <div className="hover:bg-gray-700 mx-auto text-center border-4 rounded-full flex p-3 items-center brc-1">
-                                        <h3 className="clr-1 font-medium text-2xl">{followersCount}</h3>
-                                        <h4 className="text-xl text-gray-300">Followers</h4>
+                                        <a href={`${username}/followers`}>
+                                            <h3 className="clr-1 font-medium text-2xl">{followersCount}</h3>
+                                            <h4 className="text-xl text-gray-300">Followers</h4>
+                                        </a>
                                     </div>
 
                                     <div className="hover:bg-gray-700 mx-auto text-center border-4 rounded-full flex p-3 items-center brc-1">
