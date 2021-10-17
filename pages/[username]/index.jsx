@@ -4,6 +4,7 @@ import 'remixicon/fonts/remixicon.css'
 import { useRouter } from 'next/router'
 import getUserData from '../../functions/getUserData';
 import formatDate from '../../functions/formatDate';
+import urlChecker from '../../functions/urlChecker';
 import SearchForm from '../../components/SearchForm'
 import Footer from '../../components/Footer';
 
@@ -35,7 +36,7 @@ function ProfilePage() {
             setFollowersCount(data.followers)
             setFollowingCount(data.following)
             setJoined(date)
-            setLink(data.blog)
+            setLink(urlChecker(data.blog))
             setLoaded(1)
         } else {
             router.push('/')
