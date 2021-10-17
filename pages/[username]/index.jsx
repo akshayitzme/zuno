@@ -58,12 +58,12 @@ function ProfilePage() {
                     <div className="mt-14 container mx-auto">
                         <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
                             <div className="">
-                                <img className="w-56" src={avatarLink} alt="" />
+                                <img className="w-56 rounded" src={avatarLink} alt="" />
                                 <h2 className="text-2xl font-bold clr-1">{username}</h2>
                                 <h3 className="text-gray-300 text-base">{bio}</h3>
                                 <h3 className="text-gray-300 text-base">{loc}</h3>
                                 <h3 className="text-gray-300 text-base">
-                                    <i class="ri-links-line"></i>
+                                    <i className="ri-links-line"></i>
                                     <a href={link} target="_blank">
                                         <span className="font-medium">&nbsp;Website</span>
                                     </a>
