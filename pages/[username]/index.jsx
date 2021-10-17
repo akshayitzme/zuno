@@ -44,9 +44,9 @@ function ProfilePage() {
     }, [username])
 
     return (
-        <div>
+        <div className="">
             {isLoaded ? (
-                <div className="bg-1 mx-auto h-screen w-screen p-8">
+                <div className="mx-auto h-screen w-screen p-8">
                     <Head>
                         <title>Zuno - {username}</title>
                         <link rel="icon" href="/favicon.ico" />
@@ -55,7 +55,7 @@ function ProfilePage() {
                         <h1 className="place-self-start text-6xl text-white font-bold clr-1">Zuno.</h1>
                         <SearchForm />
                     </div>
-                    <div className="mt-14 container mx-auto">
+                    <div className="pt-14 container mx-auto">
                         <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
                             <div className="">
                                 <img className="w-56 rounded" src={avatarLink} alt="" />
@@ -71,7 +71,7 @@ function ProfilePage() {
 
                             </div>
 
-                            <div className="mx-auto mt-10">
+                            <div className="mx-auto pt-10">
                                 <div className="grid grid-cols-2 gap-3">
                                     <div className="hover:bg-gray-700 mx-auto text-center border-4 rounded-full flex p-3 items-center brc-1">
                                         <a href={`${username}/followers`}>
@@ -81,28 +81,38 @@ function ProfilePage() {
                                     </div>
 
                                     <div className="hover:bg-gray-700 mx-auto text-center border-4 rounded-full flex p-3 items-center brc-1">
-                                        <h3 className="clr-1 font-medium text-2xl">{followingCount}</h3>
-                                        <h4 className="text-xl text-gray-300">Following</h4>
+                                        <a href="">
+                                            <h3 className="clr-1 font-medium text-2xl">{followingCount}</h3>
+                                            <h4 className="text-xl text-gray-300">Following</h4>
+                                        </a>
                                     </div>
 
                                     <div className="hover:bg-gray-700 mx-auto text-center border-4 rounded-full flex p-3 items-center  brc-1">
-                                        <h3 className="clr-1 font-medium text-2xl">{starCount}</h3>
-                                        <h4 className="text-xl text-gray-300">Stars</h4>
+                                        <a href="">
+                                            <h3 className="clr-1 font-medium text-2xl">{starCount}</h3>
+                                            <h4 className="text-xl text-gray-300">Stars</h4>
+                                        </a>
                                     </div>
 
                                     <div className="hover:bg-gray-700 mx-auto text-center border-4 rounded-full flex p-3 items-center brc-1">
-                                        <h3 className="clr-1 font-medium text-2xl">{repoCount}</h3>
-                                        <h4 className="text-xl text-gray-300">Public Repo's</h4>
+                                        <a href="">
+                                            <h3 className="clr-1 font-medium text-2xl">{repoCount}</h3>
+                                            <h4 className="text-xl text-gray-300">Public Repo's</h4>
+                                        </a>
                                     </div>
 
                                     <div className="hover:bg-gray-700 mx-auto text-center border-4 rounded-full flex p-3 items-center brc-1">
-                                        <h3 className="clr-1 font-medium text-2xl">{gistCount}</h3>
-                                        <h4 className="text-xl text-gray-300">Gist's</h4>
+                                        <a href="">
+                                            <h3 className="clr-1 font-medium text-2xl">{gistCount}</h3>
+                                            <h4 className="text-xl text-gray-300">Gist's</h4>
+                                        </a>
                                     </div>
 
                                     <div className="hover:bg-gray-700 mx-auto text-center border-4 rounded-full flex p-3 items-center brc-1">
-                                        <h3 className="clr-1 font-medium text-2xl">{joined}</h3>
-                                        <h4 className="ml-1 text-xl text-gray-300">Joined</h4>
+                                        <a href="">
+                                            <h3 className="clr-1 font-medium text-2xl">{joined}</h3>
+                                            <h4 className="ml-1 text-xl text-gray-300">Joined</h4>
+                                        </a>
                                     </div>
                                 </div>
 
